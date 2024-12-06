@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bballengine.BasketballApi">
+   <children>
+      <HBox prefHeight="22.0" prefWidth="598.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search BBAl" textAlignment="CENTER" wrappingWidth="598.1531982421875" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="90.0" prefWidth="579.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search For player" wrappingWidth="291.5308723449707">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="57.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="59.0" prefWidth="579.0">
+               <children>
+                  <TextField fx:id="SearchField" prefHeight="46.0" prefWidth="534.0" />
+                  <Button fx:id="searchbutton" mnemonicParsing="false" onAction="#kkk" prefHeight="46.0" prefWidth="127.0" text="search" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <TableView fx:id="nameTable" prefHeight="213.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="599.2000061273575" text="                                                                                  Name" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+   <stylesheets>
+      <URL value="@Styles/search_result.css" />
+      <URL value="@Styles/style.css" />
+   </stylesheets>
+</VBox>
